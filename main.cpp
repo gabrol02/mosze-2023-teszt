@@ -4,14 +4,14 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[N_ELEMENTS]; // átnevezés NELEMENTS-rõl N_ELEMENTS re
-    std::cout << '1-100 ertekek duplazasa'; // ";" pótlása
-    for (int i = 0;i<N_ELEMENTS;i++) // for ciklus helyes paraméterezése
+    int *b = new int[N_ELEMENTS]; // Ã¡tnevezÃ©s NELEMENTS-rÃµl N_ELEMENTS re
+    std::cout << '1-100 ertekek duplazasa'; // ";" pÃ³tlÃ¡sa
+    for (int i = 0;i<N_ELEMENTS;i++) // for ciklus helyes paramÃ©terezÃ©se
     {
         b[i] = i * 2;
     }
 
-    for (int i = 0; i < N_ELEMENTS; i++)  // for ciklus helyes paraméterezése
+    for (int i = 0; i < N_ELEMENTS; i++)  // for ciklus helyes paramÃ©terezÃ©se
     {
         std::cout << "Ertek:"
     }    
@@ -26,7 +26,7 @@ int main()
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
 
-    delete[] b; // Fel kell szabadítani a dinamikus memóriát
-
+    delete[] b; // Fel kell szabadÃ­tani a dinamikus memÃ³riÃ¡t
+    std::cout << "Itt van egy uj sor" << std::endl;
     return 0;
 }
